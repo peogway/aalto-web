@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo</title>
+  </head>
+  <body>
+    <h1>Todo</h1>
+    <p><%= it.todo.title %></p>
+    <form method="POST" action="/todos/<%= it.todo.id %>/delete">
+      <input type="submit" value="Delete" />
+    </form>
+    <a href="/todos">Back to Todos</a>
+  </body>
+</html>

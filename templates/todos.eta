@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todos</title>
+  </head>
+  <body>
+    <h1>Your Todos</h1>
+    <ul>
+      <% for (const todo of it.todos) { %>
+        <li>
+          <a href="/todos/<%= todo.id %>"><%= todo.title %></a>
+        </li>
+      <% } %>
+    </ul>
+    <form method="POST" action="/todos">
+      <input type="text"
