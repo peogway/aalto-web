@@ -14,4 +14,8 @@ const addUserToContextMiddleware = async (c, next) => {
   await next();
 };
 
+const sayHI = () => {
+  console.log("hi");
+};
+
 export { accessControlMiddleware, addUserToContextMiddleware };
